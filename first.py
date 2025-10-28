@@ -118,13 +118,60 @@ This is also another way to write multi line comment
 # mySrtingOne="This is first string 'Test'"
 # mySrtingTwo='This is second string "Test"'
 # print(mySrtingOne, mySrtingTwo)
-myThirdString='''\First \
-Second 
-Third 
-"test"'''
+# myThirdString='''\First \
+# Second 
+# Third 
+# "test"'''
 # myFourthString="""Fourth
 # Fifth
 # Sixth"""
-print(myThirdString)
+# print(myThirdString)
 # print(myFourthString)
 # end lesson 7
+# start lesson 8
+# Strings-indexing and slicing in python
+# 1-all data in python is object
+# 2- object contain elements
+# 3-every element has its own index
+# 4-python user zero based indexing (index start from zero)
+# 5-user squeare brackets [] to access elements by index
+# 6-indexing and slicing enable accessing parts of strings,Tuples,and lists
+myString="Hello, World!"
+# indexing (access single item)
+# print(myString[0]) # H
+# print(myString[1]) # e
+# print(myString[2]) # l
+# print(myString[3]) # l
+# print(myString[4]) # o
+# print(myString[5]) # ,
+# print(myString[6]) # " "
+# print(myString[7]) # W
+# print(myString[8]) # o
+# print(myString[9]) # r
+# print(myString[10]) # l
+# print(myString[11]) # d
+# print(myString[12]) # !
+# print(myString[-1]) # !  first character from the end
+# print(myString[-2]) # d  second character from the end
+# print(myString[-3]) # l  third character from the end
+# slicing (access multiple sequences items)
+# [start:end] #end not included
+# [start:end:step]
+# print(myString[8:10]) #or 
+# print(myString[2:4]) #ll
+# # if start not exist it will be considered as 0
+# print(myString[:5]) #Hello
+# # if end not exist it will be considered as len(string)
+# print(myString[7:]) #World!
+# # get full string
+# print(myString[:]) #Hello, World!
+# # step
+# print(myString[::2]) #Hlo ol!
+# print(myString[::3]) #Hl r!
+# end lesson 8
+# start lesson 9
+# String methods in python
+myString="Hello, World!"
+myString2="  Hello, World!"
+print(len(myString))
+print(len(myString2)) 
