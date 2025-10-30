@@ -171,7 +171,31 @@ myString="Hello, World!"
 # end lesson 8
 # start lesson 9
 # String methods in python
-myString="Hello, World!"
-myString2="  Hello, World!"
-print(len(myString))
-print(len(myString2)) 
+# len() # to get the length of string
+# myString="Hello, World!"
+# myString2="  Hello, World!"
+# print(len(myString))
+# print(len(myString2)) 
+# a= "  hello world  "
+# print(len(a))
+# strip() # to remove whitespace from the beginning and the end of the string
+# print(a.strip())
+# print(a.rstrip())
+# print(a.lstrip())
+# b= "##hello#world!##"
+# print(b.strip("#"))
+# print(b.rstrip("#"))
+# print(b.lstrip("#"))
+# title() # to convert the first character of each word to uppercase
+# a= "hello world 2d"
+# print(a.title())
+# # capitalize() # to convert the first character of the string to uppercase
+# print(a.capitalize())
+# # zfill() # to fill the string with zeros on the left side until it reaches the specified length
+# num = "42"
+# print(num.zfill(5))
+# # upper() # to convert the string to uppercase
+# print(a.upper())
+# # lower() # to convert the string to lowercase
+# print(a.lower())
+# # end lesson 9
