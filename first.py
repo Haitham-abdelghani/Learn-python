@@ -199,3 +199,121 @@ myString="Hello, World!"
 # # lower() # to convert the string to lowercase
 # print(a.lower())
 # # end lesson 9
+# start lesson 10
+# string methods in python part 2
+# split() # to split the string into a list of substrings based on a specified delimiter
+# a= "Hello, World! Welcome to Python."
+# print(a.split())
+# print(a.split(","))
+# b="one-two-three-four"
+# print(b.split("-"))
+# print(b.split("-",2)) # maxsplit
+# # center() # to center the string within a specified width by adding padding characters on both sides
+# c= "Hello"
+# print(c.center(9)) # default padding is space
+# print(c.center(9,"*"))
+# # count() # to count the number of occurrences of a substring in the string
+# d= "Python Programming python python"
+# print(d.count("python")) # case sensitive
+# print(d.count("python",0,1)) # count in specific range
+# # swapcase() # to swap the case of each character in the string
+# e= "Hello World"
+# print(e.swapcase())
+# # startswith() # to check if the string starts with a specified substring
+# f= "Hello, World!"
+# print(f.startswith("Hello"))
+# print(f.startswith("World",3,12)) # check in specific range
+# # endswith() # to check if the string ends with a specified substring
+# print(f.endswith("!"))
+# print(f.endswith("World",0,12)) # check in specific range
+# # end lesson 10
+# # start lesson 11
+# # string methods in python part 3
+# # index(text,start,end) # to find the index of the first occurrence of a substring in the string
+# g= "Hello, World! Welcome to Python. World"
+# print(g.index("W"))
+# print(g.index("W",0,8)) # case sensitive
+# # find(text,start,end) # to find the index of the first occurrence of a substring in the string
+# print(g.find("W"))
+# print(g.find("W",0,8)) # case sensitive
+# # rjust and ljust() # to right justify and left justify the string within a specified width by adding padding characters
+# h= "Hello"
+# print(h.rjust(10))
+# print(h.rjust(10,"*"))
+# print(h.ljust(10))
+# print(h.ljust(10,"*"))
+# # splitlines() # to split the string into a list of lines
+# i= "Hello World\nWelcome to Python\nEnjoy coding"
+# print(i.splitlines())
+# # expandtabs() # to replace tab characters with spaces
+# j= "Hello\tWorld\tPython"
+# print(j.expandtabs())
+# print(j.expandtabs(20))
+# # isTitle() # to check if the string is in title case
+# k= "Hello World"
+# print(k.istitle())
+# l= "Hello world"
+# print(l.istitle())
+# # isSpace() # to check if the string contains only whitespace characters
+# m= "   "
+# print(m.isspace())
+# n= " Hello "
+# print(n.isspace())
+# # isLower() # to check if the string contains only lowercase characters
+# o= "hello"
+# print(o.islower())
+# p= "Hello"
+# print(p.islower())
+# # isUpper() # to check if the string contains only uppercase characters
+# q= "HELLO"
+# print(q.isupper())
+# r= "Hello"
+# print(r.isupper())
+# # isIdentifier() # to check if the string is a valid identifier
+# s= "HelloWorld"
+# print(s.isidentifier())
+# t= "Hello World"
+# print(t.isidentifier())
+# # isAlpha() # to check if the string contains only alphabetic characters
+# u= "HelloWorld"
+# print(u.isalpha())
+# v= "Hello123"
+# print(v.isalpha())
+# # isalnum() # to check if the string contains only alphanumeric characters
+# w= "Hello123"
+# print(w.isalnum())
+# x= "Hello 123"
+# print(x.isalnum())
+# # end lesson 11
+# # start lesson 12
+# # string methods in python part 4
+# # replace(old,new,count) # to replace occurrences of a substring with a new substring
+# y= "Hello World! Welcome to Python. World"
+# print(y.replace("World","Universe"))
+# print(y.replace("World","Universe",1)) # replace only first occurrence
+# # join(iterable) # to join elements of an iterable (like list or tuple) into a single string with a specified separator
+# z= ["Hello","World","Python"]
+# print(" ".join(z))
+# print("-".join(z))
+# print(','.join(z))
+# end lesson 12
+# start lesson 13
+# string formatting methods in python
+name = "Alice"
+age = 25
+rank=10
+print('myy name is :'+ name)
+# print('my name is :' + name + 'and my age is :' + age) # TypeError: can only concatenate str (not "int") to str
+# print("my name is : %s"%" haitham")
+# print("my name is : %s"%" "+ name)
+print("my name is : %s and my age is : %d"%(name,age))
+print("my name is : %s and my age is : %d and my rank is : %f"%(name,age,rank))
+# %s => string
+# %d => integer
+# %f => float
+# control floating number of digits
+print("my name is : %s and my age is : %d and my rank is : %.2f"%(name,age,rank))
+# truncate string (control on string)
+myLongString="Hello, World! Welcome to Python Programming."
+print(" message is %.5s"% myLongString)
+# end lesson 13
