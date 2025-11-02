@@ -610,122 +610,184 @@ mySet = {1, 2, 3}
 # a -=b
 # print(a)  # {1, 2}
 # intersection() # to return a new set with elements that are common to both sets
-a={1,2,3,4}
-b={4,5,6,7}
-setC = a.intersection(b)
-print(setC)  # {4}
-# using & operator
-setD = a & b
-print(setD)  # {4}
-# intersection_update() # to update the first set with elements that are common to both sets
-a={1,2,3,4}
-b={4,5,6,7}
-a.intersection_update(b)
-print(a)  # {4}
-# using &= operator
-a={1,2,3,4}
-b={4,5,6,7}
-a &= b
-print(a)  # {4}
-# symmetric_difference() # to return a new set with elements in either set but not in both
-a={1,2,3,4}
-b={4,5,6,7}
-setC = a.symmetric_difference(b)
-print(setC)  # {1, 2, 3, 5, 6, 7}
-print(a)
-# using ^ operator
-setD = a ^ b
-print(setD)  # {1, 2, 3, 5, 6, 7}
-# symmetric_difference_update() # to update the first set with elements in either set but not in both
-a={1,2,3,4}
-b={4,5,6,7}
-a.symmetric_difference_update(b)
-print(a)  # {1, 2, 3, 5, 6, 7}
-# using ^= operator
-a={1,2,3,4}
-b={4,5,6,7}
-a ^=b
-print(a)
-# end lesson 21
-# start lesson 22
-# set methods in python part 3
-# issuperset() # to check if the first set is a superset of the second set
-a={1,2,3,4,5} 
-b={2,3}
-print(a.issuperset(b))  # True => we check if the {2,3} exsisting in the set a or not
-print(b.issuperset(a))  # False => we check if the {1,2,3,4,5} exsisting in the set b or not
-# issubset() # to check if the first set is a subset of the second set
-a={1,2,3}
-b={1,2,3,4,5}
-print(a.issubset(b))  # True => we check if the {1,2,3} exsisting in the set b or not
-print(b.issubset(a))  # False => we check if the {1,2,3,4,5} exsisting in the set a or not
-# isdisjoint() # to check if two sets have no elements in common
-a={1,2,3}
-b={4,5,6}
-print(a.isdisjoint(b))  # True => no common elements
-c={3,4,5}
-print(a.isdisjoint(c))  # False => common element is 3
-# end lesson 22
-# start lesson 23
-# dictionary in python
-# 1-dictionary items are enclosed in curly braces {}
-# 2-dictionary items are key:value pairs
-# 3-dictionary key need to be Immutable => (Number, String ,Tuple) List not allowed
-# 4-dictionary value can be anytype data type
-# 5-dictionary key must be unique
-# 6-dictionary is unordered (python 3.7+ ordered)
-# 7-dictionary is mutable (can be changed)
-user={
-    "name":"Alice",
-    "age":25,
-    "is_student":True,
-    "courses":["Math","Science","History"],
-    "address":{
-        "street":"123 Main St",
-        "city":"New York",
-        "zip":"10001"
-    },
-    (1,2,3):"set as a key",  # valid but not recommended
-    "name":"Bob"  # duplicate key, the last one will be used
-}
-print(user)
-print(type(user))
-print(len(user))
-print(user["name"])  # access value by key
-print(user["address"]["city"])  # access nested dictionary value
-print(user[(1,2,3)])  # access value by tuple key
-print(user.get("age"))  # access value using get() method
-print(user.keys())
-print(user.values())
-# Two-dimensional dictionary
-students={
-    "student1":{
-        "name":"Alice",
-        "age":20
-    },
-    "student2":{
-        "name":"Bob",
-        "age":22
-    },
-    "student3":{
-        "name":"Charlie",
-        "age":21
-    }
-}
-print(students)
-print(students["student2"]["name"])
-# create dictionary from variables
-frameWorkOne={
-    "name":"Django",
-    "language":"Python",
-    "version":3.2
-}
-allFrameworkName={
-    "one":frameWorkOne["name"],
-    "two":frameWorkOne["language"],
-    "three":frameWorkOne["version"],
-    "four":frameWorkOne
-}
-print(allFrameworkName)
+# a={1,2,3,4}
+# b={4,5,6,7}
+# setC = a.intersection(b)
+# print(setC)  # {4}
+# # using & operator
+# setD = a & b
+# print(setD)  # {4}
+# # intersection_update() # to update the first set with elements that are common to both sets
+# a={1,2,3,4}
+# b={4,5,6,7}
+# a.intersection_update(b)
+# print(a)  # {4}
+# # using &= operator
+# a={1,2,3,4}
+# b={4,5,6,7}
+# a &= b
+# print(a)  # {4}
+# # symmetric_difference() # to return a new set with elements in either set but not in both
+# a={1,2,3,4}
+# b={4,5,6,7}
+# setC = a.symmetric_difference(b)
+# print(setC)  # {1, 2, 3, 5, 6, 7}
+# print(a)
+# # using ^ operator
+# setD = a ^ b
+# print(setD)  # {1, 2, 3, 5, 6, 7}
+# # symmetric_difference_update() # to update the first set with elements in either set but not in both
+# a={1,2,3,4}
+# b={4,5,6,7}
+# a.symmetric_difference_update(b)
+# print(a)  # {1, 2, 3, 5, 6, 7}
+# # using ^= operator
+# a={1,2,3,4}
+# b={4,5,6,7}
+# a ^=b
+# print(a)
+# # end lesson 21
+# # start lesson 22
+# # set methods in python part 3
+# # issuperset() # to check if the first set is a superset of the second set
+# a={1,2,3,4,5} 
+# b={2,3}
+# print(a.issuperset(b))  # True => we check if the {2,3} exsisting in the set a or not
+# print(b.issuperset(a))  # False => we check if the {1,2,3,4,5} exsisting in the set b or not
+# # issubset() # to check if the first set is a subset of the second set
+# a={1,2,3}
+# b={1,2,3,4,5}
+# print(a.issubset(b))  # True => we check if the {1,2,3} exsisting in the set b or not
+# print(b.issubset(a))  # False => we check if the {1,2,3,4,5} exsisting in the set a or not
+# # isdisjoint() # to check if two sets have no elements in common
+# a={1,2,3}
+# b={4,5,6}
+# print(a.isdisjoint(b))  # True => no common elements
+# c={3,4,5}
+# print(a.isdisjoint(c))  # False => common element is 3
+# # end lesson 22
+# # start lesson 23
+# # dictionary in python
+# # 1-dictionary items are enclosed in curly braces {}
+# # 2-dictionary items are key:value pairs
+# # 3-dictionary key need to be Immutable => (Number, String ,Tuple) List not allowed
+# # 4-dictionary value can be anytype data type
+# # 5-dictionary key must be unique
+# # 6-dictionary is unordered (python 3.7+ ordered)
+# # 7-dictionary is mutable (can be changed)
+# user={
+#     "name":"Alice",
+#     "age":25,
+#     "is_student":True,
+#     "courses":["Math","Science","History"],
+#     "address":{
+#         "street":"123 Main St",
+#         "city":"New York",
+#         "zip":"10001"
+#     },
+#     (1,2,3):"set as a key",  # valid but not recommended
+#     "name":"Bob"  # duplicate key, the last one will be used
+# }
+# print(user)
+# print(type(user))
+# print(len(user))
+# print(user["name"])  # access value by key
+# print(user["address"]["city"])  # access nested dictionary value
+# print(user[(1,2,3)])  # access value by tuple key
+# print(user.get("age"))  # access value using get() method
+# print(user.keys())
+# print(user.values())
+# # Two-dimensional dictionary
+# students={
+#     "student1":{
+#         "name":"Alice",
+#         "age":20
+#     },
+#     "student2":{
+#         "name":"Bob",
+#         "age":22
+#     },
+#     "student3":{
+#         "name":"Charlie",
+#         "age":21
+#     }
+# }
+# print(students)
+# print(students["student2"]["name"])
+# # create dictionary from variables
+# frameWorkOne={
+#     "name":"Django",
+#     "language":"Python",
+#     "version":3.2
+# }
+# allFrameworkName={
+#     "one":frameWorkOne["name"],
+#     "two":frameWorkOne["language"],
+#     "three":frameWorkOne["version"],
+#     "four":frameWorkOne
+# }
+# print(allFrameworkName)
 # end lesson 23
 # start lesson 24
+# dictionary methods in python
+# # clear() # to remove all items from the dictionary
+# myDict={
+#     "name":"Alice",
+#     "age":25,
+#     "is_student":True
+# }
+# myDict.clear()
+# print(myDict)  # {}
+# # update() # to update the dictionary with new key-value pairs or modify existing ones
+# myDict={
+#     "name":"Alice",
+#     "age":25,
+#     "is_student":True
+# }
+# myDict['name']='bob'  # update existing key
+# print(myDict)
+# myDict.update({"age":30,"city":"New York"})  # update existing key and add new key
+# print(myDict)
+# copy() # to create a shallow copy of the dictionary
+# originalDict={
+#     "name":"Alice",
+#     "age":25,
+#     "is_student":True
+# }
+# copiedDict=originalDict.copy()
+# print(copiedDict)
+# originalDict["age"]=30
+# print(copiedDict)
+# print(originalDict)
+# # keys() # to get a view object of all keys in the dictionary
+# print(originalDict.keys())
+# # values() # to get a view object of all values in the dictionary
+# print(originalDict.values())
+# setdefault() # to get the value of a key if it exists, otherwise set it to a default value
+# myDict={
+#     "name":"Alice",
+#     "age":25
+# }
+# print(myDict.setdefault("name","Bob"))  # Alice
+# print(myDict.setdefault("age"))  # New York
+# print(myDict.setdefault("city","New York"))  # New York
+# print(myDict)
+# popitem() # to remove and return an arbitrary key-value pair from the dictionary
+
+myDict={
+    "name":"Alice",
+    "age":25
+}
+myDict.update({"city":"New York"})
+print(myDict)
+print(myDict.popitem())
+# items() # to get a view object of all key-value pairs in the dictionary
+print(myDict.items())
+myDict.update({"country":"USA"})
+print(myDict.items())
+# fromkeys() # to create a new dictionary with keys from an iterable and values set to a specified value
+keys = ["name", "age", "city"]
+defaultValue = "Unknown"
+newDict = dict.fromkeys(keys, defaultValue)
+print(newDict)
+# end lesson 24
