@@ -299,21 +299,433 @@ myString="Hello, World!"
 # end lesson 12
 # start lesson 13
 # string formatting methods in python
-name = "Alice"
-age = 25
-rank=10
-print('myy name is :'+ name)
-# print('my name is :' + name + 'and my age is :' + age) # TypeError: can only concatenate str (not "int") to str
-# print("my name is : %s"%" haitham")
-# print("my name is : %s"%" "+ name)
-print("my name is : %s and my age is : %d"%(name,age))
-print("my name is : %s and my age is : %d and my rank is : %f"%(name,age,rank))
-# %s => string
-# %d => integer
-# %f => float
-# control floating number of digits
-print("my name is : %s and my age is : %d and my rank is : %.2f"%(name,age,rank))
-# truncate string (control on string)
-myLongString="Hello, World! Welcome to Python Programming."
-print(" message is %.5s"% myLongString)
+# name = "Alice"
+# age = 25
+# rank=10
+# print('myy name is :'+ name)
+# # print('my name is :' + name + 'and my age is :' + age) # TypeError: can only concatenate str (not "int") to str
+# # print("my name is : %s"%" haitham")
+# # print("my name is : %s"%" "+ name)
+# print("my name is : %s and my age is : %d"%(name,age))
+# print("my name is : %s and my age is : %d and my rank is : %f"%(name,age,rank))
+# # %s => string
+# # %d => integer
+# # %f => float
+# # control floating number of digits
+# print("my name is : %s and my age is : %d and my rank is : %.2f"%(name,age,rank))
+# # truncate string (control on string)
+# myLongString="Hello, World! Welcome to Python Programming."
+# print(" message is %.5s"% myLongString)
 # end lesson 13
+# start lesson 14
+# advanced string formatting in python
+# name = "Alice"
+# age = 25
+# rank=10.56789
+# print("my name is : {}".format(name))
+# print("my name is : {} and my age is : {}".format(name,age))
+# print("my name is : {:s} and my age is : {:d} and my rank is : {:f}".format(name,age,rank))
+# print("my name is : {:s} and my age is : {:d} and my rank is : {:.2f}".format(name,age,rank))
+# print("my name is : %s and my age is : %d and my work is : %f" % (name,age,rank))
+# print("my name is : {} and my age is : {} and my work is : {}" .format (name,age,rank))
+# myMoney=1234567890
+# print("my money is : {}".format(myMoney))
+# print("my money is : {:,d}".format(myMoney))
+# # rearrange items
+# a,b,c= "one","two","three"
+# print("first : {1} {2} {0}".format(a,b,c)) #indexing
+# format in version 3.6+
+# name = "Alice"
+# age = 25
+# print("my name is :{name} and my age is : {age}")
+# print(f"my name is : {name} and my age is : {age}")
+# end lesson 14
+# start lesson 15
+# number systems in python
+# decimal (base 10)
+# print(10)
+# # binary (base 2)
+# print(0b1010)
+# print(type(10))
+# print(type(0b1010))
+# # complex 
+# myStringComplex=3 + 5j
+# print(3 + 5j)
+# print(type(3 + 5j))
+# print("real part is : {}".format(myStringComplex.real))
+# print("imaginary part is : {}".format(myStringComplex.imag))
+# # you can convert from Int to float or complex
+# myInt=10
+# print(myInt)
+# myInt=float(myInt)
+# print(myInt)
+# myInt=complex(myInt)
+# print(myInt)
+# myInt=int(myInt)
+# print(myInt) #int() argument must be a string, a bytes-like object or a real number, not 'complex'
+# end lesson 15
+# start lesson 16
+#  arithmetic operators in python
+# addition +
+# print(10+20)
+# print("Hello " + "World")
+# print(-10 +20)
+# # subtraction -
+# print(20-10)
+# print(-10 - -20)
+# # multiplication *
+# print(10*2)
+# print("Hello " * 3)
+# print(-5 * 4)
+# # division /
+# print(20/5)
+# print(-20/5)
+# print(7/3)
+# # floor division //
+# print(20//3)
+# print(-20//3)
+# print(20.5//3)
+# print(110//5) #
+# # modulus %
+# print(20%3)
+# print(-20%3)
+# print(20%-3)
+# print(8 % 2)
+# print(7 % 2)
+# print(13 % 2)
+# print(22 % 5)
+# # exponentiation **
+# print(2**3)
+# print(5**4)
+# print(9**0.5)
+# print(27**(1/3))
+# end lesson 16
+# start lesson 17
+# Lists
+# 1- list is a collection which is ordered and changeable
+# 2- list allows duplicate members
+# 3- list is defined by square brackets []
+# 4- list can contain different data types
+# 5- list can be nested (a list can contain another list)
+# 6- list support indexing and slicing
+# 7- list support many built-in methods
+# 8- list is mutable (can be changed) ==> add,remove,update elements
+# 9- list can be iterated using loops
+
+# myList = ["one", "two", "three", 4, 5.55, True, [6, 7, 8]]
+# print(myList)
+# print(type(myList))
+# print(len(myList))
+# print(myList[0])  # first element
+# print(myList[6])  # nested list
+# print(myList[6][1])  # access element from nested list
+# print(myList[-1])  # last element
+# print(myList[1:4])  # slicing
+# print(myList[0:]) # from start to end
+# print(myList[:3])  # from start to index 2
+# print(myList[::2])  # slicing with step
+# myList[0] = "ONE"  # update element
+# print(myList)
+# myList[0:4] = ["First", "Second", "Third", "Fourth"]  # update multiple elements
+# print(myList)
+# # append() # to add an element at the end of the list
+# myList.append("new item")
+# print(myList)
+# newList = [9, 10, 11]
+# myList.append(newList)  # add nested list
+# print(myList)
+# print(myList[8][0])
+# # extend() # to add multiple elements at the end of the list
+# myList.extend([12, 13, 14])
+# print(myList)
+# remove() # to remove an element from the list
+# a= [1, 2, 3, 4, 3];
+# a.remove(3)
+# print(a)
+# # sort() # to sort the list in ascending order
+# b= [5, 2, 9, 1, 5, 6]
+# b.sort()
+# print(b)
+# b.sort(reverse=True)
+# print(b)
+# b.sort(reverse=False)
+# print(b)
+# # reverse() # to reverse the order of the list
+# c= [1, 2, 3, 4, 5,"one","two","three"]
+# c.reverse()
+# print(c)
+# end lesson 17
+# start lesson 18
+# list methods in python part 2
+# clear() # to remove all elements from the list
+# myList = [1, 2, 3, 4, 5]
+# myList.clear()
+# print(myList)
+# # copy() # to create a shallow copy of the list
+# originalList = [1, 2, 3, 4, 5]
+# copiedList = originalList.copy()
+# print(copiedList)
+# originalList.append(6)
+# print(copiedList)
+# # count() # to count the occurrences of an element in the list
+# myList = [1, 2, 3, 2, 4, 2, 5]
+# print(myList.count(2))
+# # index() # to find the index of the first occurrence of an element in the list
+# myList = ['a', 'b', 'c', 'd', 'b']
+# print(myList.index('b'))
+# # insert() # to insert an element at a specific index in the list
+# myList = [1, 2, 4, 5]
+# myList.insert(2, 3)  # insert 3 at index 2
+# print(myList)
+# # pop() # to remove and return an element at a specific index in the list
+# myList = [1, 2, 3, 4, 5]
+# removedElement = myList.pop(2)  # remove element at index 2
+# print(removedElement)
+# print(myList)
+# end lesson 18
+# start lesson 19
+# Tuples in python
+# 1- tuple is a collection which is ordered and unchangeable
+# 2- tuple allows duplicate members
+# 3- tuple is defined by parentheses ()
+# 4- tuple can contain different data types
+# 5- tuple can be nested (a tuple can contain another tuple)
+# 6- tuple support indexing and slicing
+# 7- tuple support many built-in methods
+# 8- tuple is immutable (cannot be changed)
+# myTuple = ("one", "two", "three", 4, 5.55, True, (6, 7, 8))
+# myTupleTwo = 1, 2, 3, 4  # without parentheses
+# print(myTuple)
+# print(type(myTuple))
+# print(myTupleTwo)
+# print(type(myTupleTwo))
+# print(len(myTuple))
+# print(myTuple[0])  # first element
+# print(myTuple[6])  # nested tuple
+# myTupleTwo[0] = 10  # TypeError: 'tuple' object does not support item assignment
+# tuple with single element
+# mySingleTuple = (5,)
+# print(type(mySingleTuple))
+# # tuple concatenation
+# myTupleA = (1, 2, 3)
+# myTupleB = (4, 5, 6)
+# myTupleC = myTupleA + myTupleB
+# print(myTupleC)
+# # tuple repetition , list repetition , string repetition
+# myNewTuple = myTupleA * 3
+# myNewString = "Hello " * 3
+# myNewList = [1, 2, 3] * 3
+# print(myNewTuple)
+# print(myNewString)
+# print(myNewList)
+# a= (1, 2, 3, 4, 3)
+# print(a.count(3))
+# b= ('a', 'b', 'c', 'd', 'b')
+# print("The position is : {:d}".format(b.index('b')))
+# # tuple dustruction
+# myTuple = (10, 20, 30)
+# a, b, c = myTuple
+# print(a)
+# print(b)
+# print(c)
+# end lesson 19
+# start lesson 20
+# set in python
+# 1- set is a collection which is unordered and unindexed
+# 2- set is mutable (can be changed) but elements are immutable
+# 3- set does not allow duplicate members
+# 4- set is defined by curly braces {} or by the set() function
+# 5- set can contain different data types
+# 6- set cannot be accessed by index or slicing
+# 7- set support many built-in methods
+# 8- cant make indexing or slicing
+# mySet = {1, 2, 3, 4, 5}
+# # print(mySet[0]) # TypeError: 'set' object is not subscriptable
+# # print(mySet[0:2]) # TypeError: 'set' object is not subscriptable
+# # print(type(mySet))
+# mySetTwo = {"apple", "banana", "cherry", 1, 2.5, True}
+# print(mySetTwo)
+# # mySetThree = {"orange", "grape", "watermelon", 3, 4.5, False,[5,6]} # TypeError: unhashable type: 'list'
+# mySetFour = {"orange", "grape", "watermelon", 3, 4.5, False,(5,6)}  # tuple is immutable
+# # items is unique
+# mySetFive = {1, 2, 2, 3, 4, 4, 5}
+# print(mySetFive)  # {1, 2, 3, 4, 5}
+# set methods
+# clear() # to remove all elements from the set
+# mySet = {1, 2, 3, 4, 5}
+# mySet.clear()
+# print(mySet)
+# # union() # to combine two sets and return a new set with all unique elements from both sets
+# setA = {1, 2, 3}
+# setB = {3, 4, 5}
+# setC = setA.union(setB)
+# print(setC)
+# # using | operator
+# setD = setA | setB
+# print(setD)
+# print(setA.union(setB,{6,7,8})) 
+# add() # to add an element to the set
+mySet = {1, 2, 3}
+# mySet.add(4)
+# print(mySet)
+# # copy() # to create a shallow copy of the set
+# originalSet = {1, 2, 3}
+# copiedSet = originalSet.copy()
+# print(copiedSet)
+# originalSet.add(4)
+# print(copiedSet)
+# # remove() # to remove an element from the set
+# mySet.remove(2)
+# print(mySet)
+# mySet.remove(100)  # KeyError: 100
+# discard() # to remove an element from the set if it exists
+# mySet.discard(3)
+# print(mySet)
+# mySet.discard(100)  # no error
+# print(mySet)
+# pop() # to remove and return an arbitrary element from the set
+# removedElement = mySet.pop()
+# print(removedElement)
+# print(mySet)
+# # update() # to add multiple elements to the set
+# mySet.update([4, 5, 2])
+# print(mySet)
+# end lesson 20
+# start lesson 21
+# set methods in python part 2
+# difference() # to return a new set with elements in the first set that are not in the second set
+# setA = {1, 2, 3, 4, 5}
+# setB = {4, 5, 6, 7, 8}
+# print(setA.difference(setB))  # {1, 2, 3}
+# # using - operator
+# print(setA - setB)  # {1, 2, 3}
+# # difference_update() # to remove elements from the first set that are also in the second set and update the first set
+# a={1,2,3,4}
+# b={3,4,5,6}
+# a.difference_update(b)
+# print(a)  # {1, 2}
+# # using -= operator
+# a={1,2,3,4}
+# b={3,4,5,6}
+# a -=b
+# print(a)  # {1, 2}
+# intersection() # to return a new set with elements that are common to both sets
+a={1,2,3,4}
+b={4,5,6,7}
+setC = a.intersection(b)
+print(setC)  # {4}
+# using & operator
+setD = a & b
+print(setD)  # {4}
+# intersection_update() # to update the first set with elements that are common to both sets
+a={1,2,3,4}
+b={4,5,6,7}
+a.intersection_update(b)
+print(a)  # {4}
+# using &= operator
+a={1,2,3,4}
+b={4,5,6,7}
+a &= b
+print(a)  # {4}
+# symmetric_difference() # to return a new set with elements in either set but not in both
+a={1,2,3,4}
+b={4,5,6,7}
+setC = a.symmetric_difference(b)
+print(setC)  # {1, 2, 3, 5, 6, 7}
+print(a)
+# using ^ operator
+setD = a ^ b
+print(setD)  # {1, 2, 3, 5, 6, 7}
+# symmetric_difference_update() # to update the first set with elements in either set but not in both
+a={1,2,3,4}
+b={4,5,6,7}
+a.symmetric_difference_update(b)
+print(a)  # {1, 2, 3, 5, 6, 7}
+# using ^= operator
+a={1,2,3,4}
+b={4,5,6,7}
+a ^=b
+print(a)
+# end lesson 21
+# start lesson 22
+# set methods in python part 3
+# issuperset() # to check if the first set is a superset of the second set
+a={1,2,3,4,5} 
+b={2,3}
+print(a.issuperset(b))  # True => we check if the {2,3} exsisting in the set a or not
+print(b.issuperset(a))  # False => we check if the {1,2,3,4,5} exsisting in the set b or not
+# issubset() # to check if the first set is a subset of the second set
+a={1,2,3}
+b={1,2,3,4,5}
+print(a.issubset(b))  # True => we check if the {1,2,3} exsisting in the set b or not
+print(b.issubset(a))  # False => we check if the {1,2,3,4,5} exsisting in the set a or not
+# isdisjoint() # to check if two sets have no elements in common
+a={1,2,3}
+b={4,5,6}
+print(a.isdisjoint(b))  # True => no common elements
+c={3,4,5}
+print(a.isdisjoint(c))  # False => common element is 3
+# end lesson 22
+# start lesson 23
+# dictionary in python
+# 1-dictionary items are enclosed in curly braces {}
+# 2-dictionary items are key:value pairs
+# 3-dictionary key need to be Immutable => (Number, String ,Tuple) List not allowed
+# 4-dictionary value can be anytype data type
+# 5-dictionary key must be unique
+# 6-dictionary is unordered (python 3.7+ ordered)
+# 7-dictionary is mutable (can be changed)
+user={
+    "name":"Alice",
+    "age":25,
+    "is_student":True,
+    "courses":["Math","Science","History"],
+    "address":{
+        "street":"123 Main St",
+        "city":"New York",
+        "zip":"10001"
+    },
+    (1,2,3):"set as a key",  # valid but not recommended
+    "name":"Bob"  # duplicate key, the last one will be used
+}
+print(user)
+print(type(user))
+print(len(user))
+print(user["name"])  # access value by key
+print(user["address"]["city"])  # access nested dictionary value
+print(user[(1,2,3)])  # access value by tuple key
+print(user.get("age"))  # access value using get() method
+print(user.keys())
+print(user.values())
+# Two-dimensional dictionary
+students={
+    "student1":{
+        "name":"Alice",
+        "age":20
+    },
+    "student2":{
+        "name":"Bob",
+        "age":22
+    },
+    "student3":{
+        "name":"Charlie",
+        "age":21
+    }
+}
+print(students)
+print(students["student2"]["name"])
+# create dictionary from variables
+frameWorkOne={
+    "name":"Django",
+    "language":"Python",
+    "version":3.2
+}
+allFrameworkName={
+    "one":frameWorkOne["name"],
+    "two":frameWorkOne["language"],
+    "three":frameWorkOne["version"],
+    "four":frameWorkOne
+}
+print(allFrameworkName)
+# end lesson 23
+# start lesson 24
