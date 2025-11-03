@@ -774,20 +774,143 @@ mySet = {1, 2, 3}
 # print(myDict)
 # popitem() # to remove and return an arbitrary key-value pair from the dictionary
 
-myDict={
-    "name":"Alice",
-    "age":25
-}
-myDict.update({"city":"New York"})
-print(myDict)
-print(myDict.popitem())
-# items() # to get a view object of all key-value pairs in the dictionary
-print(myDict.items())
-myDict.update({"country":"USA"})
-print(myDict.items())
-# fromkeys() # to create a new dictionary with keys from an iterable and values set to a specified value
-keys = ["name", "age", "city"]
-defaultValue = "Unknown"
-newDict = dict.fromkeys(keys, defaultValue)
-print(newDict)
+# myDict={
+#     "name":"Alice",
+#     "age":25
+# }
+# myDict.update({"city":"New York"})
+# print(myDict)
+# print(myDict.popitem())
+# # items() # to get a view object of all key-value pairs in the dictionary
+# print(myDict.items())
+# myDict.update({"country":"USA"})
+# print(myDict.items())
+# # fromkeys() # to create a new dictionary with keys from an iterable and values set to a specified value
+# keys = ["name", "age", "city"]
+# defaultValue = "Unknown"
+# newDict = dict.fromkeys(keys, defaultValue)
+# print(newDict)
 # end lesson 24
+# start lesson 25
+# Boolean in python
+# 1- boolean data type has two values: True and False
+# 2- boolean values are often used in conditional statements and comparisons
+# 3- boolean values can be the result of comparison operators
+# 4- boolean values can be converted to integers (True=1, False=0) and vice versa
+# 5- boolean values can be combined using logical operators (and, or, not)
+# 6- boolean values can be used in control flow statements (if, while, for)
+# is_raining = True
+# is_sunny = False
+# print(is_raining)
+# print(is_sunny)
+# bool() # to convert a value to boolean
+# print(bool(1))  # True
+# print(bool(0))  # False
+# print(bool(""))  # False
+# print(bool("Hello"))  # True
+# print(bool([]))  # False
+# print(bool([1, 2, 3]))  # True
+# # boolean operators
+# # and , or , not
+# age = 20
+# country = "USA"
+# print(age >= 18)  # True
+# print(country == "USA")  # True
+# print(age>=18 and country=="USA")  # True
+# print(age<18 or country=="USA")  # True
+# print(not(age>=18))  # False
+# print(not(country=="USA"))  # False
+# print(age<18 or country!="USA")  # False
+# end lesson 25
+# start lesson 26
+# assignment operators in python
+# = , += , -= , *= , /= , //= , %= , **=
+# x = 10
+# print(x)
+# x += 5  # x = x + 5
+# print(x)
+# x -= 3  # x = x - 3
+# print(x)
+# x *= 2  # x = x * 2
+# print(x)
+# x /= 4  # x = x / 4
+# print(x)
+# x //= 3  # x = x // 3
+# print(x)
+# x %= 2  # x = x % 2
+# print(x)
+# x **= 4  # x = x ** 4
+# print(x)
+# # //=
+# x//=2
+# print(x)
+# # end lesson 26
+# # start lesson 27
+# # comparison operators in python
+# # == , != , > , < , >= , <=
+# x = 10
+# y = 5
+# print(x == y)  # False
+# print(x != y)  # True
+# print(x > y)  # True
+# print(x < y)  # False
+# print(x >= y)  # True
+# print(x <= y)  # False
+# end lesson 27
+# start lesson 28
+# Type conversion in python
+# str() # to convert a value to string
+# x = 10
+# print(x)
+# print(type(x))
+# x = str(x)
+# print(x)
+# print(type(x))
+# tuple() # to convert a value to tuple
+# x="Hello"
+# y=[1,2,3,4]
+# e={"A","B","C"}
+# f=("name","Alice","age",25)
+# e={"A","B","C"}
+# f={"name":"Alice","age":25}
+# print(tuple(x))
+# print(tuple(y))
+# print(tuple(e))
+# print(tuple(f))
+# print(tuple(500))  # TypeError: 'int' object is not iterable
+# list() # to convert a value to list
+# y=(1,2,3,4)
+# print(list(x))
+# print(list(y))
+# print(list(e))
+# print(list(f))
+# set() # to convert a value to set
+# e=("A","B","C")
+# # print(set(x))
+# # print(set(y))
+# # print(set(e))
+# # print(set(f))
+# # dict() # to convert a value to dictionary
+# f="hello"
+# e=((1,3),(2,4))
+# x=[["name","Alice"],["age",25]]
+# y={("name","Alice"),("age",25)}
+# # print(dict(f))
+# print(dict(e))
+# print(dict(x))  
+# print(dict(y))  
+# end lesson 28
+# start lesson 29
+# User input in python
+# fname = input("Enter your first name: ")
+# lname = input("Enter your last name: ")
+# print("Hello, " + fname + " " + lname + "!")
+# age = input("Enter your age: ")
+# print("You are " + age + " years old.")
+# yearOfBirth = 2024 - int(age)
+# print("You were born in " + str(yearOfBirth) + ".")
+# end lesson 29
+# start lesson 30
+# slice email username and domain
+
+
