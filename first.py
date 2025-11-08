@@ -912,5 +912,439 @@ mySet = {1, 2, 3}
 # end lesson 29
 # start lesson 30
 # slice email username and domain
-
-
+# email ="abdelghanehaitham@gmail.com"
+# print(email[0:17]) #abdelghanehaitham
+# print(email[:email.index("@")])
+# fName=input("Enter your first name : ").strip().title()
+# emailDomain=input("Enter your email domain : ")
+# userName=emailDomain[:emailDomain.index('@')]
+# domain=emailDomain[emailDomain.index("@")+1:]
+# print(f"Hello {fName}, your email is : {emailDomain} \nand user name {userName} and domain {domain}")
+# end lesson 30
+# start lesson 31
+# partical your age full details
+# age = input("Enter your age: ").strip()
+# print(age)
+# print(type(age))
+# print(len(age))
+# newAge=int(age)
+# print('you lived for :')
+# month = newAge * 12
+# years= month // 12
+# weeks= month * 4
+# days = years * 24
+# hours = days * 60
+# minutes = hours * 60
+# seconds = minutes * 60
+# print(f" years : {years:,} \n months: {month:,} \n weeks: {weeks:,} \n days: {days:,} \n hours: {hours:,} \n minutes: {minutes:,} \n seconds: {seconds:,}")
+# end lesson 31
+# start lesson 32
+# Control flow statements in python
+# 1- if,elif,else statements
+# userName="admin"
+# cName="user"
+# cPrice=150
+# cDis=20
+# if userName=="admin":
+#     print("Welcome Admin")
+# elif userName=="user":
+#     print("Welcome User")
+# else:
+#     print("Welcome Guest")
+#     if cPrice>100:
+#         finalPrice=cPrice - cDis
+#         print(f"Final price after discount is : {finalPrice}")
+#     else:
+#         print(f"Final price is : {cPrice}")
+# # end lesson 32
+# # start lesson 33
+# # control flow statements part 2
+# # nested if statement
+# num = int(input("Enter a number: "))
+# if num >=0:
+#     if num == 0:
+#         print("The number is zero.")
+#     else:
+#         print("The number is positive.")
+# else:
+#     print("The number is negative.")
+# end lesson 33
+# start lesson 10
+# control flow statements part 3
+# ternary operator
+# please=" dasdas"
+# age =input(f"Enter your age :{please}")
+# ageNew="hello" if int(age) >= 18 else "hi"
+# print(ageNew)
+# end lesson 34
+# start lesson 35
+# calculate age advanced version and training  
+# age =input("Enter your age : ").strip()
+# unit = input("please choose the unit (years, months, weeks, days, hours, minutes, seconds): ").strip().lower()
+# if unit == "months":
+#     print(f"you lived for : {int(age) *12:,} months")
+# elif unit == "weeks":
+#     print(f"you lived for : {int(age) * 52:,} weeks")
+# elif unit == "days":
+#     print(f"you lived for : {int(age) * 365:,} days")
+# end lesson 35
+# start lesson 36
+# membership operators in python
+# in , not in
+# string
+# name ="haitham"
+# print("h" in name)  # True
+# print("z" in name)  # False
+# print("H" not in name)  # True
+# # list
+# myList = [1, 2, 3, 4, 5]
+# print(3 in myList)  # True
+# print(6 in myList)  # False
+# print(7 not in myList)  # True
+# # using in and not in with if statement
+# countryOne = ["USA", "Canada", "UK", "Australia"]
+# discountOne= 20
+# countryTwo = ["France", "Germany", "Italy"]
+# discountTwo= 10
+# myCountry = input("Enter your country: ").strip()
+# # if myCountry in countryOne or countryTwo:
+# #     if myCountry in countryOne:
+# #         print(f"you are have discount:{discountOne}%")
+# #     elif myCountry in countryTwo:
+# #         print(f"you are have discount:{discountTwo}%")
+# #     else:
+# #         print("you are not have any discount")
+# # else:
+# #     print("you are not have any discount$$$$")
+# if myCountry == 'USA' or myCountry == 'Canada' or myCountry == 'UK' or myCountry == 'Australia':
+#     print(f"you are have discount:{discountOne}%")
+# elif myCountry == 'France' or myCountry == 'Germany' or myCountry == 'Italy':
+#     print(f"you are have discount:{discountTwo}%")
+# else:
+#     print("you are not have any discount$$$$")
+# end lesson 36
+# start lesson 37
+# Loops in python
+# while condition_is_true:
+#     # code to be executed repeatedly
+# count = 1
+# while count<=5:
+#     print(f"Count is: {count}")
+#     count += 1
+# print("Loop ended.")
+# while loop with else
+# count = 1
+# while count <= 5:
+#     print(f"Count is: {count}")
+#     count += 1
+# else:
+#     print("Loop ended normally.")
+# loop => while training 
+# simple bookmark system
+# websites = []
+# allowedWebsites = 5
+# while allowedWebsites >0:
+#     website= input("Enter a website to bookmark: ").strip()
+#     websites.append(website)
+#     allowedWebsites -=1
+#     print(f"You have {allowedWebsites} bookmarks left.")
+# else:
+#     print("You have reached the maximum number of bookmarks.")
+#     print("Your bookmarked websites are:")
+#     for site in websites:
+#         print(f"- {site}")
+# Loop break statement
+# iterable object =>sequence [list,tuple,string,set,dictionary]
+# count = 1
+# while count <= 10:
+#     if count == 6:
+#         print("Breaking the loop at count 6.")
+#         break
+#     print(f"Count is: {count}")
+#     count += 1
+# print("Loop ended.")
+# # loop =>for
+# iterable = [1, 2, 3, 4, 5]
+# for item in iterable:
+#     print(f"Item is:{item}")
+#     # odd or even 
+#     if item % 2 ==0:
+#         print(f"{item} is even")
+#     else:
+#         print(f"{item} is odd")
+# loop => for training
+# myRange = range(1,100)
+# for number in myRange:
+#     print(f"number is : {number}")
+# # dictionary loop
+# myDict={
+#     "name":"Alice",
+#     "age":25,
+#     "is_student":True
+# }
+# for key in myDict:
+#     print(f"key is : {key} and value is : {myDict[key]}")
+#     print(f"key is : {key} and value is : {myDict.get(key)} %%%%")
+# end lesson 37
+# start lesson 38
+# loop => for
+# nested loop
+# peoples = ["Alice", "Bob", "Charlie"]
+# skills = ["Python", "Java", "C++"]
+# for person in peoples:
+#     print(f"Skills of {person}:")
+#     for skill in skills:
+#         print(f"- {skill}")
+# peoples={
+#     "Alice":{
+#         "python":80,
+#         "Django":70,
+#         "Flask":60
+#     },
+#     "Bob":{
+#         "Java":85,
+#         "Spring":75,
+#         "Hibernate":65
+#     },
+#     "Charlie":{
+#         "C++":90,
+#         "Qt":80,
+#         "OpenGL":70
+#     }
+# }
+# print(peoples["Alice"]["Django"])
+# for person in peoples:
+#     print(f"skills of {person}:")
+#     for skill in peoples[person]:
+#         print(f"-{skill}=> {peoples[person][skill]}%")
+# break, continue , pass
+# for number in range(1,11):
+#     if number == 5:
+#         print("Skipping number 5.")
+#         continue
+#     print(f"Number is: {number}")
+# numbers=[1,2,3,4,5,6,7,8,9,10]
+# # for number in numbers:
+# #     if number == 5:
+# #        break
+# #     print(f"Number is: {number}")
+# # pass
+# for number in numbers:
+#     if number == 5:
+#         pass  # Placeholder for future code
+#     print(f"Number is: {number}") # IndentationError: expected an indented block after 'if' statement on line 246
+# loop advanced dictionary
+# peoples={
+#     "Alice":{
+#         "python":80,
+#         "Django":70,
+#         "Flask":60
+#     },
+#     "Bob":{
+#         "Java":85,
+#         "Spring":75,
+#         "Hibernate":65
+#     },
+#     "Charlie":{
+#         "C++":90,
+#         "Qt":80,
+#         "OpenGL":70
+#     }
+# }
+# print(peoples.items())
+# for key,value in peoples.items():
+#     print(f"this is the key :{key} and this is the value : {value}")
+#     for skill,score  in value.items():
+#         print(f"skill is : {skill} and score is : {score}")
+# end lesson 38
+# start lesson 39
+# Function and return statement in python
+# 1- function is a block of code which only runs when it is called
+# 2- function is defined using the def keyword
+# 3- function can accept parameters (arguments) and return data
+# 4- function can have default parameter values
+# 5- function can have variable-length arguments
+# 6- function can be recursive (a function that calls itself)
+# 7- function can be anonymous (lambda function)
+# 8- function can be nested (a function inside another function)
+# 9- function can have docstrings (documentation strings)
+# 10- function can be imported from other modules
+# 11- function can be assigned to variables
+# 12- function can be passed as arguments to other functions
+# 13- function can return multiple values
+# 14- function can have type hints (annotations)
+# define a function
+# def greetUser(name: str) -> str:
+#     """This function greets the user with their name."""
+#     return f"Hello, {name}! Welcome to the Python course."
+# # call the function
+# userName = input("Enter your name: ").strip().title()
+# greetingMessage = greetUser(userName)
+# print(greetingMessage)
+# end lesson 39
+# start lesson 40
+# function with default parameter value
+# def calculateArea(length:float=2,width:float=1)->float:
+#     """This function calculates the area of a rectangle."""
+#     return length * width
+# def calculateArea(length:float,width:float)->float:
+#     """This function calculates the area of a rectangle."""
+#     return length * width
+# print(calculateArea(2,4))  # using default values
+# def sayHello()->None:
+#     """This function prints a hello message."""
+#     print("Hello! This is a simple function without parameters and return value.")
+# sayHello()
+# end lesson 40
+# start lesson 41
+# function pack and unpacking arguments
+# def displayInfo(*args, **kwargs) -> None:
+#     """This function displays positional and keyword arguments."""
+#     print("Positional arguments:", args)
+#     print("Keyword arguments:", kwargs)
+# # call the function with positional arguments
+# displayInfo("Alice", 25, True)
+# # call the function with keyword arguments
+# displayInfo(name="Bob", age=30, is_student=False)
+# # call the function with both positional and keyword arguments
+# displayInfo("Charlie", 22, is_student=True, city="New York")
+# # unpacking arguments from a list and dictionary
+# positionalArgs = ["David", 28, False]
+# keywordArgs = {"name": "Eve", "age": 26, "is_student": True}
+# displayInfo(*positionalArgs)
+# displayInfo(**keywordArgs)
+# function default parameter value with packing and unpacking
+# def createProfile(name: str, age: int = 18, **additionalInfo) -> dict:
+#     """This function creates a user profile dictionary."""
+#     profile = {
+#         "name": name,
+#         "age": age
+#     }
+#     profile.update(additionalInfo)
+#     return profile
+# print(createProfile("Alice", location="USA", occupation="Engineer"))
+# print(createProfile("Bob", 25, hobbies=["Reading", "Traveling"]))
+# print(createProfile("Charlie", 30, is_student=True))
+# end lesson 41
+# start lesson 42
+# Function Packing Unpacking Keyword Arguments
+# def show_skills(*skills:str)->None:
+#     print(type(skills))
+#     for skill in skills:
+#         print(f"- {skill}")
+# show_skills("Python", "Java", "C++", "JavaScript")
+# def show_user_info(**user_info:dict)->None:
+#     print(type(user_info))
+#     for key, value in user_info.items():
+#         print(f"{key}: {value}")
+# show_user_info(name="Alice", age=25, city="New York", is_student=True)
+# end lesson 42
+# start lesson 43
+# function scope in python
+# global variable
+# x = 10  # global variable
+# def myFunction() -> None:
+#     # local variable
+#     y = 5  # local variable
+#     print(f"Inside the function, x = {x}")  # accessing global variable
+#     print(f"Inside the function, y = {y}")  # accessing local variable
+# myFunction()
+# print(f"Outside the function, x = {x}")  # accessing global variable   
+# # print(f"Outside the function, y = {y}")  # NameError: name 'y' is not defined
+# # modifying global variable inside a function
+# def modifyGlobal() -> None:
+#     global x  # declare x as global
+#     x += 5  # modify global variable
+#     print(f"Inside the function after modification, x = {x}")
+# modifyGlobal()
+# print(f"Outside the function after modification, x = {x}")
+# end lesson 43
+# start lesson 44
+# function recursion in python
+# def factorial(n: int) -> int:
+#     """This function returns the factorial of a number using recursion."""
+#     if n == 0 or n == 1:
+#         return 1
+#     else:
+#         return n * factorial(n - 1)
+# number = int(input("Enter a number to calculate its factorial: "))
+# result = factorial(number)
+# print(f"The factorial of {number} is {result}.")
+# question: What will happen if we pass a negative number to the factorial function?
+# answer: The function will enter an infinite recursion because there is no base case for negative numbers, leading to a RecursionError.
+# question: we want to write function that take this param "wwwoooooorrldd" and return "world"
+# def remove_duplicates(word:str)->str:
+#     if len(word) == 1:
+#         return word #base case
+#     if word[0] == word[1]:
+#         return remove_duplicates(word[1:])
+#     if word[0] != word[1]:
+#         return word[0] + remove_duplicates(word[1:])
+# print(remove_duplicates("wwwoooooorrldd"))
+# end lesson 44
+# start lesson 45
+# lambda function in python
+# 1- lambda function is a small anonymous function
+# 2- lambda function can take any number of arguments but can only have one expression
+# 3- lambda function is defined using the lambda keyword
+# 4- lambda function can be used wherever function objects are required
+# 5- lambda function can be assigned to variables
+# 6- lambda function can be used with built-in functions like map(), filter(), and reduce()
+# 7- lambda function can be used with higher-order functions
+# 8- lambda function can be used in list comprehensions
+# # syntax
+# lambda arguments: expression
+# # example 1
+# add = lambda x, y: x + y
+# def say_hello(name,age): return f"hello {name} your age is {age}"
+# hello = lambda name,age: f"hello {name} your age is {age}"
+# print(say_hello.__name__)
+# print(hello.__name__)
+# end lesson 45
+# start lesson 46
+# Files Handling Part One Intro
+# "a" => append mode open file for writing, appending to the end of the file if it exists
+# "r" => read mode open file for reading (default mode)
+# "w" => write mode open file for writing, truncating the file first if it exists
+# "x" => exclusive creation mode open file for exclusive creation, failing if the file already exists
+# import os
+# print(os.getcwd()) # get current working directory main
+# print(os.path.dirname(os.path.abspath(__file__))) # directory of the current file
+# # change current working directory
+# os.chdir(os.path.dirname(os.path.abspath(__file__)))
+# print(os.getcwd()) # get current working directory after change
+# print(os.path.abspath(__file__)) # get full path of the current file
+# file = open("haitham.txt") #read by default
+# file = open (r"c:\\Users\\abdel\\OneDrive\\Desktop\\Learn-python\\haitham.txt")  # absolute path
+# # end lesson 46
+# # start lesson 47
+# #  Files Handling Part 2 Read Files
+# myFile = open("haitham.txt", "r")  # read mode
+# print(myFile)  # <_io.TextIOWrapper name='haitham.txt' mode='r' encoding='cp1252'>
+# print(type(myFile))  # <class '_io.TextIOWrapper'>
+# print(myFile.name)  # haitham.txt
+# print(myFile.mode)  # r
+# print(myFile.read())
+# print(myFile.read(23))
+# print(myFile.readline(2))
+# for line in myFile:
+#     print(line)
+#     if line.startswith('7'):
+#         break
+# myFile.close()
+# end lesson 47
+# start lesson 48
+# Files Handling Part 3 Write and Append In Files
+# myFile = open("haitham.txt", "w")  # write mode
+# myFile.write("\nThis line is added in write mode.\n" * 5)
+# myFile.close()
+# myList = ["line 1\n", "Line 2\n", "Line 3\n"]
+# myFile = open("haitham.txt", "w")  # write mode
+# myFile.writelines(myList)
+# append mode
+# myFile = open("haitham.txt", "a")  # append mode
+# myFile.write("\nThis line is added in append mode.\n" * 5)
+# myFile.close()
+# truncate() # to truncate the file to a specified size
+myFile = open("haitham.txt", "a")  # append mode
+myFile.truncate(5)  # truncate the file to 5 bytes
