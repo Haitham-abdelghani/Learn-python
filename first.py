@@ -1346,5 +1346,108 @@ mySet = {1, 2, 3}
 # myFile.write("\nThis line is added in append mode.\n" * 5)
 # myFile.close()
 # truncate() # to truncate the file to a specified size
-myFile = open("haitham.txt", "a")  # append mode
-myFile.truncate(5)  # truncate the file to 5 bytes
+# myFile = open("haitham.txt", "a+")  # append and read mode
+# # myFile.truncate(5)  # truncate the file to 5 bytes
+# # print(myFile.tell())  # get the current file position
+# myFile.seek(5)  # move the file position to byte 5
+# print(myFile.read())
+# myFile.close()  # don't forget to close the file
+# to remove file
+# import os
+# os.remove("haitham.txt")
+# end lesson 48
+# start lesson 49
+# built-in Function in python
+# all() # to check if all elements in an iterable are true
+# any() # to check if any element in an iterable is true
+# bin() # to convert an integer to a binary string
+# id() # to get the unique identifier of an object
+# x= [1,2,3]
+x=2
+# if all(x):
+#     print("All elements are true.")
+# else:
+#     print("Not all elements are true.")
+# if any(x):
+#     print("At least one element is true.")
+# else:
+#     print("No elements are true.")
+# if bin(10) == '0b1010':
+#     print("Binary conversion is correct.")
+# else:
+#     print("Binary conversion is incorrect.")
+# id()
+# print(f"The unique identifier of the list x is: {id(x)}")
+# end lesson 49
+# start lesson 50
+# built-in Function in python part 2
+# sum(),round(),range(),print()
+# sum() # to calculate the sum of all elements in an iterable
+# sum(iterable, start=0)
+# numbers = [1, 2, 3, 4, 5]
+# total = sum(numbers)
+# print(f"The sum of the numbers is: {total}")
+# print(f"The sum of the numbers with a starting value of 10 is: {sum(numbers, 10)}")
+# # round() # to round a floating-point number to a specified number of decimal places
+# # round(number, ndigits=0)
+# num = 3.14159
+# num2=2.6766
+# print(round(num, 2))
+# print(round(num2))
+# print(round(num2,2))
+# # range() # to generate a sequence of numbers
+# # range(start, stop, step)
+# start number by default 0 , stop number that we want to reach (end not included), step by default 1
+# for i in range(1, 11, 2):
+#     print(i)
+# for j in range(0, 9):
+#     print(j)
+# print(list(range(0, 20, 2)))
+# print() # to print output to the console
+# print("Hello, World!")
+# print("hello world!")
+# will get same result because the default separator is space
+# using sep parameter
+# print("Hello", "World", sep="-")
+# end lesson 50
+# start lesson 51
+# built-in Function in python part 3
+# abs(),pow(),len(),max(),min(),slice()
+# abs() # to get the absolute value of a number
+# number = -10
+# print(abs(number))
+# # pow() # to calculate the power of a number
+# # pow(base,exp,modulo=None)
+# print(pow(2, 3))  # 2^3 = 8
+# print(pow(5, 2))  # 5^2 = 25
+# print(pow(2,5,10)) # (2^5) % 10 = 32 % 10 = 2
+# # len() # to get the length of an iterable
+# myString = "Hello, World!"
+# print(len(myString))  # 13
+# myList = [1, 2, 3, 4, 5]
+# print(len(myList))  # 5
+# # max() # to get the maximum value from an iterable
+# myNumbers = [10, 20, 5, 30, 15]
+# print(max(myNumbers))  # 30
+# # min() # to get the minimum value from an iterable
+# print(min(myNumbers))  # 5
+# # slice() # to create a slice object
+# myString = "Hello, World!"
+# mySlice = slice(0, 5)
+# print(myString[mySlice])  # Hello
+# myList = [1, 2, 3, 4, 5]
+# mySlice = slice(1, 4)
+# print(myList[mySlice])  # [2, 3, 4]
+# end lesson 51
+# start lesson 52
+# built-in Function in python part 4
+# map()
+# 1-map take a function and an iterable as arguments
+# 2-map called map because it map the function on every element
+# 3-the function can be pre-Defined or a lambda function
+# use map() with pre-defined function
+def square(x):
+    return x * x
+
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = map(square, numbers)
